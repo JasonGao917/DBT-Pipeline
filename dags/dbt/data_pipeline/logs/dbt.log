@@ -1,0 +1,1332 @@
+[0m13:59:41.506715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e151d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e81490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e82090>]}
+
+
+============================== 13:59:41.508287 | 21b77bb2-55e7-4a20-b81d-638f1cebc574 ==============================
+[0m13:59:41.508287 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:59:41.508631 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'debug': 'False', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'log_path': '/Users/jasongao/data_pipeline/logs', 'no_print': 'None', 'fail_fast': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'printer_width': '80', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/jasongao/.dbt', 'log_cache_events': 'False', 'indirect_selection': 'eager'}
+[0m13:59:41.679156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21b77bb2-55e7-4a20-b81d-638f1cebc574', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e67410>]}
+[0m13:59:41.679908 [debug] [MainThread]: Set downloads directory='/var/folders/kj/5qzrr8bd5_q6wpf551xnktl80000gn/T/dbt-downloads-6msswfqp'
+[0m13:59:41.680182 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:59:41.807658 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:59:41.808969 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m13:59:41.853693 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m13:59:41.858435 [info ] [MainThread]: Updating lock file in file path: /Users/jasongao/data_pipeline/package-lock.yml
+[0m13:59:41.859346 [debug] [MainThread]: Set downloads directory='/var/folders/kj/5qzrr8bd5_q6wpf551xnktl80000gn/T/dbt-downloads-p9v0vh2w'
+[0m13:59:41.860947 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m13:59:42.025257 [info ] [MainThread]: Installed from version 1.1.1
+[0m13:59:42.025514 [info ] [MainThread]: Up to date!
+[0m13:59:42.025736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '21b77bb2-55e7-4a20-b81d-638f1cebc574', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e81fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f77e90>]}
+[0m13:59:42.027797 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.5455155, "process_user_time": 0.825387, "process_kernel_time": 0.162705, "process_mem_max_rss": "113786880", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:59:42.028088 [debug] [MainThread]: Command `dbt deps` succeeded at 13:59:42.028022 after 0.55 seconds
+[0m13:59:42.028278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053a1150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10973ae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10530ea50>]}
+[0m13:59:42.028463 [debug] [MainThread]: Flushing usage events
+[0m14:03:54.452311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055df1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105631f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105632b50>]}
+
+
+============================== 14:03:54.453987 | 85aeba47-8043-44c5-8431-714d35d77894 ==============================
+[0m14:03:54.453987 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:03:54.454328 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/jasongao/.dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False', 'no_print': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'log_path': '/Users/jasongao/data_pipeline/logs', 'partial_parse': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'target_path': 'None'}
+[0m14:03:55.296879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x139cd77d0>]}
+[0m14:03:55.317784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058ae750>]}
+[0m14:03:55.318907 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:03:55.374679 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:03:55.375218 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:03:55.375457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109afe150>]}
+[0m14:03:55.907449 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.marts
+- models.snowflake_workshop.staging
+[0m14:03:55.909654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13bd633d0>]}
+[0m14:03:55.914677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13bf44e10>]}
+[0m14:03:55.914944 [info ] [MainThread]: Found 1 model, 3 tests, 2 sources, 0 exposures, 0 metrics, 544 macros, 0 groups, 0 semantic models
+[0m14:03:55.915129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13bede850>]}
+[0m14:03:55.915800 [info ] [MainThread]: 
+[0m14:03:55.916171 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:03:55.916672 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m14:03:55.922458 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m14:03:55.922668 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m14:03:55.922843 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:03:56.529237 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m14:03:56.532614 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m14:03:56.638354 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m14:03:56.648106 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m14:03:56.648639 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m14:03:56.649046 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:03:57.112596 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m14:03:57.116247 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m14:03:57.220572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13bb45f50>]}
+[0m14:03:57.222748 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m14:03:57.223573 [info ] [MainThread]: 
+[0m14:03:57.229532 [debug] [Thread-1 (]: Began running node model.data_pipeline.stg_tpch_orders
+[0m14:03:57.230384 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_schema.stg_tpch_orders ......................... [RUN]
+[0m14:03:57.231408 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.data_pipeline.stg_tpch_orders)
+[0m14:03:57.231902 [debug] [Thread-1 (]: Began compiling node model.data_pipeline.stg_tpch_orders
+[0m14:03:57.240804 [debug] [Thread-1 (]: Writing injected SQL for node "model.data_pipeline.stg_tpch_orders"
+[0m14:03:57.241959 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_orders (compile): 14:03:57.232204 => 14:03:57.241706
+[0m14:03:57.242373 [debug] [Thread-1 (]: Began executing node model.data_pipeline.stg_tpch_orders
+[0m14:03:57.264229 [debug] [Thread-1 (]: Writing runtime sql for node "model.data_pipeline.stg_tpch_orders"
+[0m14:03:57.265252 [debug] [Thread-1 (]: Using snowflake connection "model.data_pipeline.stg_tpch_orders"
+[0m14:03:57.265552 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_orders: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.stg_tpch_orders"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_orders
+  
+   as (
+    select
+    o_orderkey as order_key,
+    o_custkey as customer_key,
+    o_orderstatus as status_code,
+    o_totalprice as total_price,
+    o_orderdate as order_date
+from
+    snowflake_sample_data.tpch_sf1.orders
+  );
+[0m14:03:57.265814 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:03:57.918517 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:03:57.943008 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_orders (execute): 14:03:57.242614 => 14:03:57.942775
+[0m14:03:57.943527 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_orders: Close
+[0m14:03:58.010912 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85aeba47-8043-44c5-8431-714d35d77894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13bf310d0>]}
+[0m14:03:58.011866 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_schema.stg_tpch_orders .................... [[32mSUCCESS 1[0m in 0.78s]
+[0m14:03:58.012696 [debug] [Thread-1 (]: Finished running node model.data_pipeline.stg_tpch_orders
+[0m14:03:58.014871 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:03:58.015263 [debug] [MainThread]: Connection 'model.data_pipeline.stg_tpch_orders' was properly closed.
+[0m14:03:58.015637 [info ] [MainThread]: 
+[0m14:03:58.015979 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.10 seconds (2.10s).
+[0m14:03:58.016623 [debug] [MainThread]: Command end result
+[0m14:03:58.026577 [info ] [MainThread]: 
+[0m14:03:58.027020 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:03:58.027342 [info ] [MainThread]: 
+[0m14:03:58.027672 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:03:58.030459 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.6008217, "process_user_time": 3.611076, "process_kernel_time": 0.399007, "process_mem_max_rss": "205045760", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:03:58.030876 [debug] [MainThread]: Command `dbt run` succeeded at 14:03:58.030780 after 3.60 seconds
+[0m14:03:58.031167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10561a4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100d41110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100caea90>]}
+[0m14:03:58.031449 [debug] [MainThread]: Flushing usage events
+[0m14:34:18.965585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10748c550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074f9dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074fa990>]}
+
+
+============================== 14:34:18.967296 | 4de342eb-137b-4fb1-9d49-6a8c613b2efe ==============================
+[0m14:34:18.967296 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:34:18.967654 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run -s stg_tpch_line_items', 'no_print': 'None', 'printer_width': '80', 'quiet': 'False', 'version_check': 'True', 'log_path': '/Users/jasongao/data_pipeline/logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_format': 'default', 'partial_parse': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'debug': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/jasongao/.dbt'}
+[0m14:34:19.877757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bab7a90>]}
+[0m14:34:19.898405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12baf0d90>]}
+[0m14:34:19.898906 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:34:19.912060 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:34:19.955895 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:34:19.956216 [debug] [MainThread]: Partial parsing: added file: data_pipeline://models/staging/stg_tpch_line_items.sql
+[0m14:34:20.019302 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.marts
+- models.snowflake_workshop.staging
+[0m14:34:20.021465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bc43410>]}
+[0m14:34:20.026655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c066390>]}
+[0m14:34:20.026903 [info ] [MainThread]: Found 2 models, 3 tests, 2 sources, 0 exposures, 0 metrics, 544 macros, 0 groups, 0 semantic models
+[0m14:34:20.027107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10428ed90>]}
+[0m14:34:20.027725 [info ] [MainThread]: 
+[0m14:34:20.028113 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:34:20.028682 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m14:34:20.034449 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m14:34:20.034648 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m14:34:20.034805 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:34:20.452558 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m14:34:20.456991 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m14:34:20.525701 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m14:34:20.535841 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m14:34:20.536324 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m14:34:20.536678 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:34:20.899330 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m14:34:20.904326 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m14:34:20.992737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b6d50d0>]}
+[0m14:34:20.994017 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m14:34:20.994503 [info ] [MainThread]: 
+[0m14:34:20.998943 [debug] [Thread-1 (]: Began running node model.data_pipeline.stg_tpch_line_items
+[0m14:34:20.999692 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_schema.stg_tpch_line_items ..................... [RUN]
+[0m14:34:21.000612 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.data_pipeline.stg_tpch_line_items)
+[0m14:34:21.001023 [debug] [Thread-1 (]: Began compiling node model.data_pipeline.stg_tpch_line_items
+[0m14:34:21.010315 [debug] [Thread-1 (]: Writing injected SQL for node "model.data_pipeline.stg_tpch_line_items"
+[0m14:34:21.011386 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_line_items (compile): 14:34:21.001279 => 14:34:21.011119
+[0m14:34:21.011770 [debug] [Thread-1 (]: Began executing node model.data_pipeline.stg_tpch_line_items
+[0m14:34:21.031007 [debug] [Thread-1 (]: Writing runtime sql for node "model.data_pipeline.stg_tpch_line_items"
+[0m14:34:21.031858 [debug] [Thread-1 (]: Using snowflake connection "model.data_pipeline.stg_tpch_line_items"
+[0m14:34:21.032138 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_line_items: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.stg_tpch_line_items"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_line_items
+  
+   as (
+    select
+    md5(cast(coalesce(cast(l_orderkey as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(l_linenumber as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as order_item_key,
+	l_orderkey as order_key,
+	l_partkey as part_key,
+	l_linenumber as line_number,
+	l_quantity as quantity,
+	l_extendedprice as extended_price,
+	l_discount as discount_percentage,
+	l_tax as tax_rate
+from
+    snowflake_sample_data.tpch_sf1.lineitem
+  );
+[0m14:34:21.032397 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:21.562981 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:34:21.586480 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_line_items (execute): 14:34:21.011977 => 14:34:21.586230
+[0m14:34:21.586945 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_line_items: Close
+[0m14:34:21.653991 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4de342eb-137b-4fb1-9d49-6a8c613b2efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c08d2d0>]}
+[0m14:34:21.654932 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_schema.stg_tpch_line_items ................ [[32mSUCCESS 1[0m in 0.65s]
+[0m14:34:21.655731 [debug] [Thread-1 (]: Finished running node model.data_pipeline.stg_tpch_line_items
+[0m14:34:21.658021 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:34:21.658402 [debug] [MainThread]: Connection 'model.data_pipeline.stg_tpch_line_items' was properly closed.
+[0m14:34:21.658771 [info ] [MainThread]: 
+[0m14:34:21.659135 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.63 seconds (1.63s).
+[0m14:34:21.659801 [debug] [MainThread]: Command end result
+[0m14:34:21.671502 [info ] [MainThread]: 
+[0m14:34:21.671886 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:34:21.672158 [info ] [MainThread]: 
+[0m14:34:21.672455 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:34:21.675405 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.7351754, "process_user_time": 3.197687, "process_kernel_time": 0.284759, "process_mem_max_rss": "201752576", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:34:21.675817 [debug] [MainThread]: Command `dbt run` succeeded at 14:34:21.675725 after 2.74 seconds
+[0m14:34:21.676107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c094d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b76250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074f9250>]}
+[0m14:34:21.676381 [debug] [MainThread]: Flushing usage events
+[0m14:40:35.414535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a22bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a281f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a282b10>]}
+
+
+============================== 14:40:35.416059 | c476b7ef-a1c5-4f32-8693-87d78501a6e2 ==============================
+[0m14:40:35.416059 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:40:35.416414 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run -s int_order_items', 'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/jasongao/data_pipeline/logs', 'printer_width': '80', 'static_parser': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jasongao/.dbt', 'warn_error': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'debug': 'False'}
+[0m14:40:35.933471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fcdfe50>]}
+[0m14:40:35.954582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ca66610>]}
+[0m14:40:35.955715 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:40:35.966948 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:40:36.008202 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:40:36.008552 [debug] [MainThread]: Partial parsing: added file: data_pipeline://models/marts/int_order_items.sql
+[0m14:40:36.066674 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.marts
+- models.snowflake_workshop.staging
+[0m14:40:36.068901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fceaf10>]}
+[0m14:40:36.074303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ff00f90>]}
+[0m14:40:36.074527 [info ] [MainThread]: Found 3 models, 3 tests, 2 sources, 0 exposures, 0 metrics, 544 macros, 0 groups, 0 semantic models
+[0m14:40:36.074712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fd7d610>]}
+[0m14:40:36.075294 [info ] [MainThread]: 
+[0m14:40:36.075670 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:40:36.076144 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m14:40:36.081562 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m14:40:36.081746 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m14:40:36.081929 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:40:36.519477 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m14:40:36.521696 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m14:40:36.598327 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m14:40:36.611324 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m14:40:36.611805 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m14:40:36.612155 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:40:36.920290 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m14:40:36.925315 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m14:40:37.008871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dab3150>]}
+[0m14:40:37.010241 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m14:40:37.010714 [info ] [MainThread]: 
+[0m14:40:37.015164 [debug] [Thread-1 (]: Began running node model.data_pipeline.int_order_items
+[0m14:40:37.015906 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_schema.int_order_items ......................... [RUN]
+[0m14:40:37.016856 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.data_pipeline.int_order_items)
+[0m14:40:37.017361 [debug] [Thread-1 (]: Began compiling node model.data_pipeline.int_order_items
+[0m14:40:37.025933 [debug] [Thread-1 (]: Writing injected SQL for node "model.data_pipeline.int_order_items"
+[0m14:40:37.026764 [debug] [Thread-1 (]: Timing info for model.data_pipeline.int_order_items (compile): 14:40:37.017664 => 14:40:37.026551
+[0m14:40:37.027110 [debug] [Thread-1 (]: Began executing node model.data_pipeline.int_order_items
+[0m14:40:37.046716 [debug] [Thread-1 (]: Writing runtime sql for node "model.data_pipeline.int_order_items"
+[0m14:40:37.047637 [debug] [Thread-1 (]: Using snowflake connection "model.data_pipeline.int_order_items"
+[0m14:40:37.047912 [debug] [Thread-1 (]: On model.data_pipeline.int_order_items: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.int_order_items"} */
+create or replace   view dbt_db.dbt_schema.int_order_items
+  
+   as (
+    select
+    line_item.order_item_key,
+    line_item.part_key,
+    line_item.line_number,
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date,
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.stg_tpch_line_items as line_item
+        on orders.order_key = line_item.order_key
+order by
+    orders.order_date
+  );
+[0m14:40:37.048155 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:40:37.578867 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:40:37.604673 [debug] [Thread-1 (]: Timing info for model.data_pipeline.int_order_items (execute): 14:40:37.027310 => 14:40:37.604407
+[0m14:40:37.605180 [debug] [Thread-1 (]: On model.data_pipeline.int_order_items: Close
+[0m14:40:37.677110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c476b7ef-a1c5-4f32-8693-87d78501a6e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12dd70310>]}
+[0m14:40:37.678315 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_schema.int_order_items .................... [[32mSUCCESS 1[0m in 0.66s]
+[0m14:40:37.679248 [debug] [Thread-1 (]: Finished running node model.data_pipeline.int_order_items
+[0m14:40:37.681555 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:40:37.682027 [debug] [MainThread]: Connection 'model.data_pipeline.int_order_items' was properly closed.
+[0m14:40:37.682460 [info ] [MainThread]: 
+[0m14:40:37.682908 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.61 seconds (1.61s).
+[0m14:40:37.683750 [debug] [MainThread]: Command end result
+[0m14:40:37.693939 [info ] [MainThread]: 
+[0m14:40:37.694321 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:40:37.694606 [info ] [MainThread]: 
+[0m14:40:37.694903 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:40:37.697094 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.30433, "process_user_time": 3.134601, "process_kernel_time": 0.21405, "process_mem_max_rss": "203243520", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:40:37.697554 [debug] [MainThread]: Command `dbt run` succeeded at 14:40:37.697449 after 2.30 seconds
+[0m14:40:37.697881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088bc8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109bf2910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e65450>]}
+[0m14:40:37.698204 [debug] [MainThread]: Flushing usage events
+[0m15:29:34.996070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f5cc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b60610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fca450>]}
+
+
+============================== 15:29:34.997861 | e7da9481-2b67-48c7-b283-b05fa3c47ade ==============================
+[0m15:29:34.997861 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:29:34.998314 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'target_path': 'None', 'log_path': '/Users/jasongao/data_pipeline/logs', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'invocation_command': 'dbt run -s int_order_items', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'no_print': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'debug': 'False', 'profiles_dir': '/Users/jasongao/.dbt', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'quiet': 'False', 'static_parser': 'True'}
+[0m15:29:35.906771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120964e50>]}
+[0m15:29:35.927348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7d9d0>]}
+[0m15:29:35.927854 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:29:35.941825 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m15:29:35.986309 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m15:29:35.986603 [debug] [MainThread]: Partial parsing: added file: data_pipeline://macros/pricing.sql
+[0m15:29:35.986789 [debug] [MainThread]: Partial parsing: updated file: data_pipeline://models/marts/int_order_items.sql
+[0m15:29:36.046883 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.marts
+- models.snowflake_workshop.staging
+[0m15:29:36.049484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120a91490>]}
+[0m15:29:36.054855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120e05fd0>]}
+[0m15:29:36.055095 [info ] [MainThread]: Found 3 models, 3 tests, 2 sources, 0 exposures, 0 metrics, 545 macros, 0 groups, 0 semantic models
+[0m15:29:36.055280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120d1bd90>]}
+[0m15:29:36.055938 [info ] [MainThread]: 
+[0m15:29:36.056419 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:29:36.057001 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m15:29:36.062577 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m15:29:36.062759 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m15:29:36.062913 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:36.530766 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m15:29:36.534255 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m15:29:36.608221 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m15:29:36.622137 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m15:29:36.622641 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m15:29:36.622989 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:29:36.985742 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m15:29:36.990268 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m15:29:37.086524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120a56810>]}
+[0m15:29:37.087961 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m15:29:37.088467 [info ] [MainThread]: 
+[0m15:29:37.092984 [debug] [Thread-1 (]: Began running node model.data_pipeline.int_order_items
+[0m15:29:37.093724 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_schema.int_order_items ......................... [RUN]
+[0m15:29:37.094655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.data_pipeline.int_order_items)
+[0m15:29:37.095148 [debug] [Thread-1 (]: Began compiling node model.data_pipeline.int_order_items
+[0m15:29:37.104382 [debug] [Thread-1 (]: Writing injected SQL for node "model.data_pipeline.int_order_items"
+[0m15:29:37.105201 [debug] [Thread-1 (]: Timing info for model.data_pipeline.int_order_items (compile): 15:29:37.095450 => 15:29:37.104993
+[0m15:29:37.105540 [debug] [Thread-1 (]: Began executing node model.data_pipeline.int_order_items
+[0m15:29:37.125612 [debug] [Thread-1 (]: Writing runtime sql for node "model.data_pipeline.int_order_items"
+[0m15:29:37.126601 [debug] [Thread-1 (]: Using snowflake connection "model.data_pipeline.int_order_items"
+[0m15:29:37.126907 [debug] [Thread-1 (]: On model.data_pipeline.int_order_items: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.int_order_items"} */
+create or replace   view dbt_db.dbt_schema.int_order_items
+  
+   as (
+    select
+    line_item.order_item_key,
+    line_item.part_key,
+    line_item.line_number,
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date,
+    
+    (-1 * line_item.extended_price * line_item.discount_percentage)::decimal(16, 2)
+ as item_discount_amount
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.stg_tpch_line_items as line_item
+        on orders.order_key = line_item.order_key
+order by
+    orders.order_date
+  );
+[0m15:29:37.127193 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:37.734155 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:29:37.758600 [debug] [Thread-1 (]: Timing info for model.data_pipeline.int_order_items (execute): 15:29:37.105734 => 15:29:37.758388
+[0m15:29:37.759001 [debug] [Thread-1 (]: On model.data_pipeline.int_order_items: Close
+[0m15:29:37.831697 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7da9481-2b67-48c7-b283-b05fa3c47ade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120e50fd0>]}
+[0m15:29:37.832609 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_schema.int_order_items .................... [[32mSUCCESS 1[0m in 0.74s]
+[0m15:29:37.833389 [debug] [Thread-1 (]: Finished running node model.data_pipeline.int_order_items
+[0m15:29:37.835598 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:29:37.835949 [debug] [MainThread]: Connection 'model.data_pipeline.int_order_items' was properly closed.
+[0m15:29:37.836274 [info ] [MainThread]: 
+[0m15:29:37.836615 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.78 seconds (1.78s).
+[0m15:29:37.837286 [debug] [MainThread]: Command end result
+[0m15:29:37.849944 [info ] [MainThread]: 
+[0m15:29:37.850263 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:29:37.850494 [info ] [MainThread]: 
+[0m15:29:37.850752 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:29:37.853590 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.883129, "process_user_time": 3.099039, "process_kernel_time": 0.382691, "process_mem_max_rss": "200949760", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:29:37.854034 [debug] [MainThread]: Command `dbt run` succeeded at 15:29:37.853935 after 2.88 seconds
+[0m15:29:37.854329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe5990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107faf950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036d93d0>]}
+[0m15:29:37.854615 [debug] [MainThread]: Flushing usage events
+[0m15:32:25.499649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10632af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106381ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106382590>]}
+
+
+============================== 15:32:25.500952 | 8856ed9e-f349-462e-8658-8737d74e4bee ==============================
+[0m15:32:25.500952 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:32:25.501288 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'version_check': 'True', 'target_path': 'None', 'profiles_dir': '/Users/jasongao/.dbt', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'fail_fast': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'log_path': '/Users/jasongao/data_pipeline/logs', 'log_format': 'default', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None'}
+[0m15:32:25.944617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1529cb990>]}
+[0m15:32:25.965898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152a00cd0>]}
+[0m15:32:25.966233 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:32:25.977084 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m15:32:26.007542 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m15:32:26.007846 [debug] [MainThread]: Partial parsing: added file: data_pipeline://models/marts/int_order_items_summary.sql
+[0m15:32:26.008035 [debug] [MainThread]: Partial parsing: added file: data_pipeline://models/marts/fct_orders.sql
+[0m15:32:26.008204 [debug] [MainThread]: Partial parsing: updated file: data_pipeline://models/marts/int_order_items.sql
+[0m15:32:26.068775 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.staging
+- models.snowflake_workshop.marts
+[0m15:32:26.071460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152e5a490>]}
+[0m15:32:26.076905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152f1a410>]}
+[0m15:32:26.077150 [info ] [MainThread]: Found 5 models, 3 tests, 2 sources, 0 exposures, 0 metrics, 545 macros, 0 groups, 0 semantic models
+[0m15:32:26.077336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152a953d0>]}
+[0m15:32:26.078191 [info ] [MainThread]: 
+[0m15:32:26.078611 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:32:26.079293 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m15:32:26.084815 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m15:32:26.084998 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m15:32:26.085151 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:26.578644 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+[0m15:32:26.581163 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m15:32:26.669367 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m15:32:26.680107 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m15:32:26.680521 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m15:32:26.680862 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:32:27.014288 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.0 seconds
+[0m15:32:27.017804 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m15:32:27.107912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152f5e090>]}
+[0m15:32:27.108841 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m15:32:27.109230 [info ] [MainThread]: 
+[0m15:32:27.111925 [debug] [Thread-1 (]: Began running node model.data_pipeline.stg_tpch_line_items
+[0m15:32:27.112372 [debug] [Thread-2 (]: Began running node model.data_pipeline.stg_tpch_orders
+[0m15:32:27.112957 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_schema.stg_tpch_line_items ..................... [RUN]
+[0m15:32:27.113478 [info ] [Thread-2 (]: 2 of 5 START sql view model dbt_schema.stg_tpch_orders ......................... [RUN]
+[0m15:32:27.114839 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.data_pipeline.stg_tpch_orders'
+[0m15:32:27.115373 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.data_pipeline.stg_tpch_line_items)
+[0m15:32:27.115707 [debug] [Thread-2 (]: Began compiling node model.data_pipeline.stg_tpch_orders
+[0m15:32:27.116037 [debug] [Thread-1 (]: Began compiling node model.data_pipeline.stg_tpch_line_items
+[0m15:32:27.122696 [debug] [Thread-2 (]: Writing injected SQL for node "model.data_pipeline.stg_tpch_orders"
+[0m15:32:27.132989 [debug] [Thread-1 (]: Writing injected SQL for node "model.data_pipeline.stg_tpch_line_items"
+[0m15:32:27.133724 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_line_items (compile): 15:32:27.122927 => 15:32:27.133534
+[0m15:32:27.134004 [debug] [Thread-1 (]: Began executing node model.data_pipeline.stg_tpch_line_items
+[0m15:32:27.149913 [debug] [Thread-1 (]: Writing runtime sql for node "model.data_pipeline.stg_tpch_line_items"
+[0m15:32:27.150310 [debug] [Thread-2 (]: Timing info for model.data_pipeline.stg_tpch_orders (compile): 15:32:27.116260 => 15:32:27.150158
+[0m15:32:27.150568 [debug] [Thread-2 (]: Began executing node model.data_pipeline.stg_tpch_orders
+[0m15:32:27.152206 [debug] [Thread-2 (]: Writing runtime sql for node "model.data_pipeline.stg_tpch_orders"
+[0m15:32:27.152718 [debug] [Thread-1 (]: Using snowflake connection "model.data_pipeline.stg_tpch_line_items"
+[0m15:32:27.153004 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_line_items: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.stg_tpch_line_items"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_line_items
+  
+   as (
+    select
+    md5(cast(coalesce(cast(l_orderkey as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(l_linenumber as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as order_item_key,
+	l_orderkey as order_key,
+	l_partkey as part_key,
+	l_linenumber as line_number,
+	l_quantity as quantity,
+	l_extendedprice as extended_price,
+	l_discount as discount_percentage,
+	l_tax as tax_rate
+from
+    snowflake_sample_data.tpch_sf1.lineitem
+  );
+[0m15:32:27.153228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:32:27.153999 [debug] [Thread-2 (]: Using snowflake connection "model.data_pipeline.stg_tpch_orders"
+[0m15:32:27.154424 [debug] [Thread-2 (]: On model.data_pipeline.stg_tpch_orders: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.stg_tpch_orders"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_orders
+  
+   as (
+    select
+    o_orderkey as order_key,
+    o_custkey as customer_key,
+    o_orderstatus as status_code,
+    o_totalprice as total_price,
+    o_orderdate as order_date
+from
+    snowflake_sample_data.tpch_sf1.orders
+  );
+[0m15:32:27.154654 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:32:27.706596 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:32:27.733059 [debug] [Thread-2 (]: Timing info for model.data_pipeline.stg_tpch_orders (execute): 15:32:27.150714 => 15:32:27.732833
+[0m15:32:27.733511 [debug] [Thread-2 (]: On model.data_pipeline.stg_tpch_orders: Close
+[0m15:32:27.818530 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152bdb990>]}
+[0m15:32:27.820354 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:32:27.821348 [info ] [Thread-2 (]: 2 of 5 OK created sql view model dbt_schema.stg_tpch_orders .................... [[32mSUCCESS 1[0m in 0.70s]
+[0m15:32:27.824487 [debug] [Thread-1 (]: Timing info for model.data_pipeline.stg_tpch_line_items (execute): 15:32:27.134166 => 15:32:27.824199
+[0m15:32:27.825278 [debug] [Thread-2 (]: Finished running node model.data_pipeline.stg_tpch_orders
+[0m15:32:27.825803 [debug] [Thread-1 (]: On model.data_pipeline.stg_tpch_line_items: Close
+[0m15:32:27.898229 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152bdb790>]}
+[0m15:32:27.899280 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_schema.stg_tpch_line_items ................ [[32mSUCCESS 1[0m in 0.78s]
+[0m15:32:27.900071 [debug] [Thread-1 (]: Finished running node model.data_pipeline.stg_tpch_line_items
+[0m15:32:27.901152 [debug] [Thread-4 (]: Began running node model.data_pipeline.int_order_items
+[0m15:32:27.901720 [info ] [Thread-4 (]: 3 of 5 START sql view model dbt_schema.int_order_items ......................... [RUN]
+[0m15:32:27.902643 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.data_pipeline.int_order_items'
+[0m15:32:27.903092 [debug] [Thread-4 (]: Began compiling node model.data_pipeline.int_order_items
+[0m15:32:27.907362 [debug] [Thread-4 (]: Writing injected SQL for node "model.data_pipeline.int_order_items"
+[0m15:32:27.908367 [debug] [Thread-4 (]: Timing info for model.data_pipeline.int_order_items (compile): 15:32:27.903410 => 15:32:27.908137
+[0m15:32:27.908771 [debug] [Thread-4 (]: Began executing node model.data_pipeline.int_order_items
+[0m15:32:27.913666 [debug] [Thread-4 (]: Writing runtime sql for node "model.data_pipeline.int_order_items"
+[0m15:32:27.914776 [debug] [Thread-4 (]: Using snowflake connection "model.data_pipeline.int_order_items"
+[0m15:32:27.915128 [debug] [Thread-4 (]: On model.data_pipeline.int_order_items: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.int_order_items"} */
+create or replace   view dbt_db.dbt_schema.int_order_items
+  
+   as (
+    select
+    line_item.order_item_key,
+    line_item.part_key,
+    line_item.line_number,
+    line_item.extended_price,
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date,
+    
+    (-1 * line_item.extended_price * line_item.discount_percentage)::decimal(16, 2)
+ as item_discount_amount
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.stg_tpch_line_items as line_item
+        on orders.order_key = line_item.order_key
+order by
+    orders.order_date
+  );
+[0m15:32:27.915468 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:32:28.435391 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:32:28.441196 [debug] [Thread-4 (]: Timing info for model.data_pipeline.int_order_items (execute): 15:32:27.909006 => 15:32:28.440947
+[0m15:32:28.441688 [debug] [Thread-4 (]: On model.data_pipeline.int_order_items: Close
+[0m15:32:28.519889 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152fe1c50>]}
+[0m15:32:28.521208 [info ] [Thread-4 (]: 3 of 5 OK created sql view model dbt_schema.int_order_items .................... [[32mSUCCESS 1[0m in 0.62s]
+[0m15:32:28.522113 [debug] [Thread-4 (]: Finished running node model.data_pipeline.int_order_items
+[0m15:32:28.523390 [debug] [Thread-6 (]: Began running node model.data_pipeline.int_order_items_summary
+[0m15:32:28.524173 [info ] [Thread-6 (]: 4 of 5 START sql view model dbt_schema.int_order_items_summary ................. [RUN]
+[0m15:32:28.525533 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.data_pipeline.int_order_items_summary'
+[0m15:32:28.526233 [debug] [Thread-6 (]: Began compiling node model.data_pipeline.int_order_items_summary
+[0m15:32:28.530618 [debug] [Thread-6 (]: Writing injected SQL for node "model.data_pipeline.int_order_items_summary"
+[0m15:32:28.531873 [debug] [Thread-6 (]: Timing info for model.data_pipeline.int_order_items_summary (compile): 15:32:28.526615 => 15:32:28.531590
+[0m15:32:28.532344 [debug] [Thread-6 (]: Began executing node model.data_pipeline.int_order_items_summary
+[0m15:32:28.535595 [debug] [Thread-6 (]: Writing runtime sql for node "model.data_pipeline.int_order_items_summary"
+[0m15:32:28.536829 [debug] [Thread-6 (]: Using snowflake connection "model.data_pipeline.int_order_items_summary"
+[0m15:32:28.537244 [debug] [Thread-6 (]: On model.data_pipeline.int_order_items_summary: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.int_order_items_summary"} */
+create or replace   view dbt_db.dbt_schema.int_order_items_summary
+  
+   as (
+    select 
+    order_key,
+    sum(extended_price) as gross_item_sales_amount,
+    sum(item_discount_amount) as item_discount_amount
+from
+    dbt_db.dbt_schema.int_order_items
+group by
+    order_key
+  );
+[0m15:32:28.537619 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:32:29.349882 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:32:29.356544 [debug] [Thread-6 (]: Timing info for model.data_pipeline.int_order_items_summary (execute): 15:32:28.532623 => 15:32:29.356222
+[0m15:32:29.357123 [debug] [Thread-6 (]: On model.data_pipeline.int_order_items_summary: Close
+[0m15:32:29.436013 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152b35050>]}
+[0m15:32:29.437248 [info ] [Thread-6 (]: 4 of 5 OK created sql view model dbt_schema.int_order_items_summary ............ [[32mSUCCESS 1[0m in 0.91s]
+[0m15:32:29.438164 [debug] [Thread-6 (]: Finished running node model.data_pipeline.int_order_items_summary
+[0m15:32:29.439376 [debug] [Thread-8 (]: Began running node model.data_pipeline.fct_orders
+[0m15:32:29.440095 [info ] [Thread-8 (]: 5 of 5 START sql view model dbt_schema.fct_orders .............................. [RUN]
+[0m15:32:29.441231 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.data_pipeline.fct_orders'
+[0m15:32:29.441712 [debug] [Thread-8 (]: Began compiling node model.data_pipeline.fct_orders
+[0m15:32:29.445969 [debug] [Thread-8 (]: Writing injected SQL for node "model.data_pipeline.fct_orders"
+[0m15:32:29.446906 [debug] [Thread-8 (]: Timing info for model.data_pipeline.fct_orders (compile): 15:32:29.441986 => 15:32:29.446689
+[0m15:32:29.447313 [debug] [Thread-8 (]: Began executing node model.data_pipeline.fct_orders
+[0m15:32:29.450255 [debug] [Thread-8 (]: Writing runtime sql for node "model.data_pipeline.fct_orders"
+[0m15:32:29.451401 [debug] [Thread-8 (]: Using snowflake connection "model.data_pipeline.fct_orders"
+[0m15:32:29.451810 [debug] [Thread-8 (]: On model.data_pipeline.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "model.data_pipeline.fct_orders"} */
+create or replace   view dbt_db.dbt_schema.fct_orders
+  
+   as (
+    select
+    orders.*,
+    order_item_summary.gross_item_sales_amount,
+    order_item_summary.item_discount_amount
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.int_order_items_summary as order_item_summary
+        on orders.order_key = order_item_summary.order_key
+order by order_date
+  );
+[0m15:32:29.452204 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m15:32:29.912347 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:32:29.917628 [debug] [Thread-8 (]: Timing info for model.data_pipeline.fct_orders (execute): 15:32:29.447542 => 15:32:29.917316
+[0m15:32:29.918212 [debug] [Thread-8 (]: On model.data_pipeline.fct_orders: Close
+[0m15:32:30.010172 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8856ed9e-f349-462e-8658-8737d74e4bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1529b9010>]}
+[0m15:32:30.011401 [info ] [Thread-8 (]: 5 of 5 OK created sql view model dbt_schema.fct_orders ......................... [[32mSUCCESS 1[0m in 0.57s]
+[0m15:32:30.012295 [debug] [Thread-8 (]: Finished running node model.data_pipeline.fct_orders
+[0m15:32:30.014628 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:32:30.015025 [debug] [MainThread]: Connection 'model.data_pipeline.stg_tpch_line_items' was properly closed.
+[0m15:32:30.015372 [debug] [MainThread]: Connection 'model.data_pipeline.stg_tpch_orders' was properly closed.
+[0m15:32:30.015703 [debug] [MainThread]: Connection 'model.data_pipeline.int_order_items' was properly closed.
+[0m15:32:30.016038 [debug] [MainThread]: Connection 'model.data_pipeline.int_order_items_summary' was properly closed.
+[0m15:32:30.016352 [debug] [MainThread]: Connection 'model.data_pipeline.fct_orders' was properly closed.
+[0m15:32:30.016785 [info ] [MainThread]: 
+[0m15:32:30.017185 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.94 seconds (3.94s).
+[0m15:32:30.018273 [debug] [MainThread]: Command end result
+[0m15:32:30.028445 [info ] [MainThread]: 
+[0m15:32:30.028812 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:32:30.029089 [info ] [MainThread]: 
+[0m15:32:30.029387 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m15:32:30.031382 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.552987, "process_user_time": 2.944524, "process_kernel_time": 0.934903, "process_mem_max_rss": "206602240", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:32:30.031816 [debug] [MainThread]: Command `dbt run` succeeded at 15:32:30.031715 after 4.55 seconds
+[0m15:32:30.032140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cf2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101097ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1011877d0>]}
+[0m15:32:30.032470 [debug] [MainThread]: Flushing usage events
+[0m15:35:10.172170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e71490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ead9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ec6550>]}
+
+
+============================== 15:35:10.173488 | ab491baa-802c-4f63-aaf2-02a12c224836 ==============================
+[0m15:35:10.173488 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:35:10.173854 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'debug': 'False', 'target_path': 'None', 'introspect': 'True', 'warn_error': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'invocation_command': 'dbt test', 'cache_selected_only': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': '/Users/jasongao/data_pipeline/logs', 'profiles_dir': '/Users/jasongao/.dbt', 'log_cache_events': 'False', 'use_experimental_parser': 'False'}
+[0m15:35:10.620791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168acfd50>]}
+[0m15:35:10.643041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e9a750>]}
+[0m15:35:10.643452 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:35:10.654830 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m15:35:10.687226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m15:35:10.687573 [debug] [MainThread]: Partial parsing: added file: data_pipeline://models/marts/generic_tests.yml
+[0m15:35:10.761441 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.staging
+- models.snowflake_workshop.marts
+[0m15:35:10.763844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168dd3710>]}
+[0m15:35:10.769068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1688d91d0>]}
+[0m15:35:10.769304 [info ] [MainThread]: Found 5 models, 7 tests, 2 sources, 0 exposures, 0 metrics, 545 macros, 0 groups, 0 semantic models
+[0m15:35:10.769487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b2de10>]}
+[0m15:35:10.770352 [info ] [MainThread]: 
+[0m15:35:10.770718 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:35:10.771333 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db_dbt_schema'
+[0m15:35:10.777725 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m15:35:10.778047 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m15:35:10.778244 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:35:11.313366 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m15:35:11.317125 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m15:35:11.488664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ab491baa-802c-4f63-aaf2-02a12c224836', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168dc9a90>]}
+[0m15:35:11.490275 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m15:35:11.490916 [info ] [MainThread]: 
+[0m15:35:11.495789 [debug] [Thread-1 (]: Began running node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:35:11.496422 [debug] [Thread-2 (]: Began running node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:35:11.497041 [debug] [Thread-3 (]: Began running node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:35:11.497530 [debug] [Thread-4 (]: Began running node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:35:11.498527 [debug] [Thread-5 (]: Began running node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:35:11.498067 [info ] [Thread-1 (]: 1 of 7 START test accepted_values_fct_orders_status_code__P__O__F .............. [RUN]
+[0m15:35:11.499145 [debug] [Thread-6 (]: Began running node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:35:11.499655 [debug] [Thread-7 (]: Began running node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:35:11.500173 [info ] [Thread-2 (]: 2 of 7 START test not_null_fct_orders_order_key ................................ [RUN]
+[0m15:35:11.500743 [info ] [Thread-3 (]: 3 of 7 START test relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_  [RUN]
+[0m15:35:11.501182 [info ] [Thread-4 (]: 4 of 7 START test source_not_null_tpch_orders_o_orderkey ....................... [RUN]
+[0m15:35:11.501600 [info ] [Thread-5 (]: 5 of 7 START test source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_  [RUN]
+[0m15:35:11.502401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048)
+[0m15:35:11.502863 [info ] [Thread-6 (]: 6 of 7 START test source_unique_tpch_orders_o_orderkey ......................... [RUN]
+[0m15:35:11.503323 [info ] [Thread-7 (]: 7 of 7 START test unique_fct_orders_order_key .................................. [RUN]
+[0m15:35:11.504096 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15'
+[0m15:35:11.504937 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce'
+[0m15:35:11.505633 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b'
+[0m15:35:11.506298 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d'
+[0m15:35:11.506697 [debug] [Thread-1 (]: Began compiling node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:35:11.507353 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2'
+[0m15:35:11.507978 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.data_pipeline.unique_fct_orders_order_key.f5e7a90273'
+[0m15:35:11.508345 [debug] [Thread-2 (]: Began compiling node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:35:11.508699 [debug] [Thread-3 (]: Began compiling node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:35:11.509031 [debug] [Thread-4 (]: Began compiling node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:35:11.509339 [debug] [Thread-5 (]: Began compiling node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:35:11.516737 [debug] [Thread-1 (]: Writing injected SQL for node "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:35:11.517060 [debug] [Thread-6 (]: Began compiling node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:35:11.517340 [debug] [Thread-7 (]: Began compiling node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:35:11.523160 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:35:11.526502 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:35:11.530028 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:35:11.572280 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:35:11.575621 [debug] [Thread-6 (]: Writing injected SQL for node "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:35:11.577390 [debug] [Thread-7 (]: Writing injected SQL for node "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:35:11.577838 [debug] [Thread-1 (]: Timing info for test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048 (compile): 15:35:11.509540 => 15:35:11.577682
+[0m15:35:11.578135 [debug] [Thread-2 (]: Timing info for test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15 (compile): 15:35:11.517518 => 15:35:11.578029
+[0m15:35:11.578425 [debug] [Thread-3 (]: Timing info for test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce (compile): 15:35:11.523379 => 15:35:11.578329
+[0m15:35:11.578797 [debug] [Thread-5 (]: Timing info for test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d (compile): 15:35:11.530222 => 15:35:11.578681
+[0m15:35:11.579003 [debug] [Thread-4 (]: Timing info for test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b (compile): 15:35:11.526702 => 15:35:11.578905
+[0m15:35:11.579219 [debug] [Thread-1 (]: Began executing node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:35:11.579474 [debug] [Thread-6 (]: Timing info for test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2 (compile): 15:35:11.572588 => 15:35:11.579345
+[0m15:35:11.579652 [debug] [Thread-2 (]: Began executing node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:35:11.579828 [debug] [Thread-7 (]: Timing info for test.data_pipeline.unique_fct_orders_order_key.f5e7a90273 (compile): 15:35:11.575809 => 15:35:11.579744
+[0m15:35:11.579999 [debug] [Thread-3 (]: Began executing node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:35:11.580163 [debug] [Thread-5 (]: Began executing node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:35:11.580317 [debug] [Thread-4 (]: Began executing node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:35:11.588451 [debug] [Thread-1 (]: Writing runtime sql for node "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:35:11.588679 [debug] [Thread-6 (]: Began executing node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:35:11.589772 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:35:11.589950 [debug] [Thread-7 (]: Began executing node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:35:11.591078 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:35:11.592309 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:35:11.593332 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:35:11.594552 [debug] [Thread-6 (]: Writing runtime sql for node "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:35:11.596199 [debug] [Thread-7 (]: Writing runtime sql for node "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:35:11.596647 [debug] [Thread-1 (]: Using snowflake connection "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:35:11.597114 [debug] [Thread-2 (]: Using snowflake connection "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:35:11.597675 [debug] [Thread-3 (]: Using snowflake connection "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:35:11.598131 [debug] [Thread-5 (]: Using snowflake connection "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:35:11.598499 [debug] [Thread-4 (]: Using snowflake connection "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:35:11.598848 [debug] [Thread-6 (]: Using snowflake connection "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:35:11.599055 [debug] [Thread-1 (]: On test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status_code as value_field,
+        count(*) as n_records
+
+    from dbt_db.dbt_schema.fct_orders
+    group by status_code
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'P','O','F'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.599273 [debug] [Thread-2 (]: On test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_key
+from dbt_db.dbt_schema.fct_orders
+where order_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.599620 [debug] [Thread-7 (]: Using snowflake connection "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:35:11.599810 [debug] [Thread-3 (]: On test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select order_key as from_field
+    from dbt_db.dbt_schema.fct_orders
+    where order_key is not null
+),
+
+parent as (
+    select order_key as to_field
+    from dbt_db.dbt_schema.stg_tpch_orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.600033 [debug] [Thread-5 (]: On test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select l_orderkey as from_field
+    from snowflake_sample_data.tpch_sf1.lineitem
+    where l_orderkey is not null
+),
+
+parent as (
+    select o_orderkey as to_field
+    from snowflake_sample_data.tpch_sf1.orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.600244 [debug] [Thread-4 (]: On test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select o_orderkey
+from snowflake_sample_data.tpch_sf1.orders
+where o_orderkey is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.600440 [debug] [Thread-6 (]: On test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    o_orderkey as unique_field,
+    count(*) as n_records
+
+from snowflake_sample_data.tpch_sf1.orders
+where o_orderkey is not null
+group by o_orderkey
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.600617 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:35:11.600772 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:35:11.600940 [debug] [Thread-7 (]: On test.data_pipeline.unique_fct_orders_order_key.f5e7a90273: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_key as unique_field,
+    count(*) as n_records
+
+from dbt_db.dbt_schema.fct_orders
+where order_key is not null
+group by order_key
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:35:11.601116 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:35:11.601276 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:35:11.601430 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:35:11.601584 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:35:11.602716 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m15:35:12.712987 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:35:12.715056 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:35:12.723314 [debug] [Thread-4 (]: Timing info for test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b (execute): 15:35:11.592439 => 15:35:12.722947
+[0m15:35:12.725262 [debug] [Thread-2 (]: Timing info for test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15 (execute): 15:35:11.588797 => 15:35:12.725023
+[0m15:35:12.725746 [debug] [Thread-4 (]: On test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b: Close
+[0m15:35:12.726145 [debug] [Thread-2 (]: On test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15: Close
+[0m15:35:12.803820 [info ] [Thread-4 (]: 4 of 7 PASS source_not_null_tpch_orders_o_orderkey ............................. [[32mPASS[0m in 1.30s]
+[0m15:35:12.804844 [info ] [Thread-2 (]: 2 of 7 PASS not_null_fct_orders_order_key ...................................... [[32mPASS[0m in 1.30s]
+[0m15:35:12.805846 [debug] [Thread-4 (]: Finished running node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:35:12.806516 [debug] [Thread-2 (]: Finished running node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:35:13.191157 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:35:13.195776 [debug] [Thread-6 (]: Timing info for test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2 (execute): 15:35:11.593516 => 15:35:13.195348
+[0m15:35:13.196438 [debug] [Thread-6 (]: On test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2: Close
+[0m15:35:13.274006 [info ] [Thread-6 (]: 6 of 7 PASS source_unique_tpch_orders_o_orderkey ............................... [[32mPASS[0m in 1.77s]
+[0m15:35:13.275296 [debug] [Thread-6 (]: Finished running node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:35:13.474812 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:35:13.479946 [debug] [Thread-5 (]: Timing info for test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d (execute): 15:35:11.591211 => 15:35:13.479546
+[0m15:35:13.480563 [debug] [Thread-5 (]: On test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d: Close
+[0m15:35:13.566123 [info ] [Thread-5 (]: 5 of 7 PASS source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_  [[32mPASS[0m in 2.06s]
+[0m15:35:13.567254 [debug] [Thread-5 (]: Finished running node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:35:14.121263 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m15:35:14.125764 [debug] [Thread-1 (]: Timing info for test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048 (execute): 15:35:11.580420 => 15:35:14.125279
+[0m15:35:14.126582 [debug] [Thread-1 (]: On test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048: Close
+[0m15:35:14.205430 [info ] [Thread-1 (]: 1 of 7 PASS accepted_values_fct_orders_status_code__P__O__F .................... [[32mPASS[0m in 2.70s]
+[0m15:35:14.206545 [debug] [Thread-1 (]: Finished running node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:35:14.331087 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m15:35:14.336098 [debug] [Thread-7 (]: Timing info for test.data_pipeline.unique_fct_orders_order_key.f5e7a90273 (execute): 15:35:11.594763 => 15:35:14.335620
+[0m15:35:14.336906 [debug] [Thread-7 (]: On test.data_pipeline.unique_fct_orders_order_key.f5e7a90273: Close
+[0m15:35:14.414651 [info ] [Thread-7 (]: 7 of 7 PASS unique_fct_orders_order_key ........................................ [[32mPASS[0m in 2.91s]
+[0m15:35:14.416341 [debug] [Thread-7 (]: Finished running node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:35:14.452734 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m15:35:14.456195 [debug] [Thread-3 (]: Timing info for test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce (execute): 15:35:11.590055 => 15:35:14.455780
+[0m15:35:14.456837 [debug] [Thread-3 (]: On test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce: Close
+[0m15:35:14.531169 [info ] [Thread-3 (]: 3 of 7 PASS relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_  [[32mPASS[0m in 3.03s]
+[0m15:35:14.532321 [debug] [Thread-3 (]: Finished running node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:35:14.535379 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:35:14.535822 [debug] [MainThread]: Connection 'test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048' was properly closed.
+[0m15:35:14.536193 [debug] [MainThread]: Connection 'test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15' was properly closed.
+[0m15:35:14.536541 [debug] [MainThread]: Connection 'test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce' was properly closed.
+[0m15:35:14.536880 [debug] [MainThread]: Connection 'test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b' was properly closed.
+[0m15:35:14.537247 [debug] [MainThread]: Connection 'test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d' was properly closed.
+[0m15:35:14.537576 [debug] [MainThread]: Connection 'test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2' was properly closed.
+[0m15:35:14.537942 [debug] [MainThread]: Connection 'test.data_pipeline.unique_fct_orders_order_key.f5e7a90273' was properly closed.
+[0m15:35:14.538404 [info ] [MainThread]: 
+[0m15:35:14.538818 [info ] [MainThread]: Finished running 7 tests in 0 hours 0 minutes and 3.77 seconds (3.77s).
+[0m15:35:14.540448 [debug] [MainThread]: Command end result
+[0m15:35:14.552186 [info ] [MainThread]: 
+[0m15:35:14.552589 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:35:14.552879 [info ] [MainThread]: 
+[0m15:35:14.553214 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m15:35:14.555486 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.4045177, "process_user_time": 4.018394, "process_kernel_time": 1.289309, "process_mem_max_rss": "209354752", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:35:14.555917 [debug] [MainThread]: Command `dbt test` succeeded at 15:35:14.555821 after 4.41 seconds
+[0m15:35:14.556239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d51d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168a2e550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e7ed0>]}
+[0m15:35:14.556579 [debug] [MainThread]: Flushing usage events
+[0m15:43:14.175755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a966290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3f2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9be4d0>]}
+
+
+============================== 15:43:14.177558 | 860bf393-ddbc-4608-b3bd-377c7e6cd1bf ==============================
+[0m15:43:14.177558 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:43:14.177967 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test', 'profiles_dir': '/Users/jasongao/.dbt', 'log_path': '/Users/jasongao/data_pipeline/logs', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'no_print': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'debug': 'False', 'target_path': 'None', 'static_parser': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'printer_width': '80', 'fail_fast': 'False', 'cache_selected_only': 'False', 'use_colors': 'True'}
+[0m15:43:15.160380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a991ed0>]}
+[0m15:43:15.182235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13ceca290>]}
+[0m15:43:15.182818 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:43:15.197200 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m15:43:15.243915 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m15:43:15.244285 [debug] [MainThread]: Partial parsing: added file: data_pipeline://tests/fct_orders_date_valid.sql
+[0m15:43:15.244471 [debug] [MainThread]: Partial parsing: added file: data_pipeline://tests/fct_orders_discount.sql
+[0m15:43:15.292454 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.snowflake_workshop.marts
+- models.snowflake_workshop.staging
+[0m15:43:15.294718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13cea52d0>]}
+[0m15:43:15.301087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d8d1a50>]}
+[0m15:43:15.301337 [info ] [MainThread]: Found 5 models, 9 tests, 2 sources, 0 exposures, 0 metrics, 545 macros, 0 groups, 0 semantic models
+[0m15:43:15.301529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a972090>]}
+[0m15:43:15.302580 [info ] [MainThread]: 
+[0m15:43:15.303087 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:43:15.303779 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db_dbt_schema'
+[0m15:43:15.310072 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m15:43:15.310247 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show terse objects in dbt_db.dbt_schema limit 10000
+[0m15:43:15.310400 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:15.781901 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m15:43:15.786031 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m15:43:15.873470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '860bf393-ddbc-4608-b3bd-377c7e6cd1bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d8cb6d0>]}
+[0m15:43:15.875159 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m15:43:15.875943 [info ] [MainThread]: 
+[0m15:43:15.880482 [debug] [Thread-1 (]: Began running node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:43:15.881120 [debug] [Thread-2 (]: Began running node test.data_pipeline.fct_orders_date_valid
+[0m15:43:15.881719 [debug] [Thread-3 (]: Began running node test.data_pipeline.fct_orders_discount
+[0m15:43:15.882751 [debug] [Thread-4 (]: Began running node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:43:15.882317 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_fct_orders_status_code__P__O__F .............. [RUN]
+[0m15:43:15.883278 [debug] [Thread-5 (]: Began running node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:43:15.883774 [debug] [Thread-6 (]: Began running node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:43:15.884621 [debug] [Thread-7 (]: Began running node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:43:15.884248 [info ] [Thread-2 (]: 2 of 9 START test fct_orders_date_valid ........................................ [RUN]
+[0m15:43:15.885122 [debug] [Thread-8 (]: Began running node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:43:15.885507 [debug] [Thread-9 (]: Began running node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:43:15.885887 [info ] [Thread-3 (]: 3 of 9 START test fct_orders_discount .......................................... [RUN]
+[0m15:43:15.886315 [info ] [Thread-4 (]: 4 of 9 START test not_null_fct_orders_order_key ................................ [RUN]
+[0m15:43:15.887171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048)
+[0m15:43:15.887676 [info ] [Thread-5 (]: 5 of 9 START test relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_  [RUN]
+[0m15:43:15.888141 [info ] [Thread-6 (]: 6 of 9 START test source_not_null_tpch_orders_o_orderkey ....................... [RUN]
+[0m15:43:15.888675 [info ] [Thread-7 (]: 7 of 9 START test source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_  [RUN]
+[0m15:43:15.889519 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.data_pipeline.fct_orders_date_valid'
+[0m15:43:15.889932 [info ] [Thread-8 (]: 8 of 9 START test source_unique_tpch_orders_o_orderkey ......................... [RUN]
+[0m15:43:15.890292 [info ] [Thread-9 (]: 9 of 9 START test unique_fct_orders_order_key .................................. [RUN]
+[0m15:43:15.890936 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.data_pipeline.fct_orders_discount'
+[0m15:43:15.891520 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15'
+[0m15:43:15.891867 [debug] [Thread-1 (]: Began compiling node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:43:15.892628 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce'
+[0m15:43:15.893215 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b'
+[0m15:43:15.893884 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d'
+[0m15:43:15.894248 [debug] [Thread-2 (]: Began compiling node test.data_pipeline.fct_orders_date_valid
+[0m15:43:15.894914 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2'
+[0m15:43:15.895520 [debug] [Thread-9 (]: Acquiring new snowflake connection 'test.data_pipeline.unique_fct_orders_order_key.f5e7a90273'
+[0m15:43:15.895845 [debug] [Thread-3 (]: Began compiling node test.data_pipeline.fct_orders_discount
+[0m15:43:15.896155 [debug] [Thread-4 (]: Began compiling node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:43:15.908823 [debug] [Thread-1 (]: Writing injected SQL for node "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:43:15.909169 [debug] [Thread-5 (]: Began compiling node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:43:15.909459 [debug] [Thread-6 (]: Began compiling node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:43:15.909716 [debug] [Thread-7 (]: Began compiling node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:43:15.911390 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_pipeline.fct_orders_date_valid"
+[0m15:43:15.911667 [debug] [Thread-8 (]: Began compiling node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:43:15.912035 [debug] [Thread-9 (]: Began compiling node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:43:15.913485 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_pipeline.fct_orders_discount"
+[0m15:43:15.918275 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:43:15.922861 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:43:15.925324 [debug] [Thread-6 (]: Writing injected SQL for node "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:43:15.928341 [debug] [Thread-7 (]: Writing injected SQL for node "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:43:15.928631 [debug] [Thread-1 (]: Timing info for test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048 (compile): 15:43:15.896366 => 15:43:15.928488
+[0m15:43:15.931787 [debug] [Thread-8 (]: Writing injected SQL for node "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:43:15.933664 [debug] [Thread-9 (]: Writing injected SQL for node "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:43:15.934061 [debug] [Thread-2 (]: Timing info for test.data_pipeline.fct_orders_date_valid (compile): 15:43:15.909883 => 15:43:15.933944
+[0m15:43:15.934373 [debug] [Thread-3 (]: Timing info for test.data_pipeline.fct_orders_discount (compile): 15:43:15.912191 => 15:43:15.934231
+[0m15:43:15.934659 [debug] [Thread-4 (]: Timing info for test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15 (compile): 15:43:15.913644 => 15:43:15.934552
+[0m15:43:15.934907 [debug] [Thread-5 (]: Timing info for test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce (compile): 15:43:15.918507 => 15:43:15.934803
+[0m15:43:15.935156 [debug] [Thread-1 (]: Began executing node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:43:15.935389 [debug] [Thread-6 (]: Timing info for test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b (compile): 15:43:15.923134 => 15:43:15.935284
+[0m15:43:15.935615 [debug] [Thread-7 (]: Timing info for test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d (compile): 15:43:15.925499 => 15:43:15.935508
+[0m15:43:15.935893 [debug] [Thread-2 (]: Began executing node test.data_pipeline.fct_orders_date_valid
+[0m15:43:15.936123 [debug] [Thread-3 (]: Began executing node test.data_pipeline.fct_orders_discount
+[0m15:43:15.936344 [debug] [Thread-8 (]: Timing info for test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2 (compile): 15:43:15.928842 => 15:43:15.936235
+[0m15:43:15.936545 [debug] [Thread-9 (]: Timing info for test.data_pipeline.unique_fct_orders_order_key.f5e7a90273 (compile): 15:43:15.931957 => 15:43:15.936449
+[0m15:43:15.936736 [debug] [Thread-4 (]: Began executing node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:43:15.936936 [debug] [Thread-5 (]: Began executing node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:43:15.946752 [debug] [Thread-1 (]: Writing runtime sql for node "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:43:15.946977 [debug] [Thread-6 (]: Began executing node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:43:15.947181 [debug] [Thread-7 (]: Began executing node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:43:15.980996 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_pipeline.fct_orders_date_valid"
+[0m15:43:15.982195 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_pipeline.fct_orders_discount"
+[0m15:43:15.982415 [debug] [Thread-8 (]: Began executing node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:43:15.982593 [debug] [Thread-9 (]: Began executing node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:43:15.983637 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:43:15.984665 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:43:15.985864 [debug] [Thread-6 (]: Writing runtime sql for node "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:43:15.987014 [debug] [Thread-7 (]: Writing runtime sql for node "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:43:15.987474 [debug] [Thread-1 (]: Using snowflake connection "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"
+[0m15:43:15.988563 [debug] [Thread-8 (]: Writing runtime sql for node "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:43:15.989683 [debug] [Thread-9 (]: Writing runtime sql for node "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:43:15.990141 [debug] [Thread-3 (]: Using snowflake connection "test.data_pipeline.fct_orders_discount"
+[0m15:43:15.990403 [debug] [Thread-2 (]: Using snowflake connection "test.data_pipeline.fct_orders_date_valid"
+[0m15:43:15.990754 [debug] [Thread-4 (]: Using snowflake connection "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"
+[0m15:43:15.991047 [debug] [Thread-1 (]: On test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status_code as value_field,
+        count(*) as n_records
+
+    from dbt_db.dbt_schema.fct_orders
+    group by status_code
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'P','O','F'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.991526 [debug] [Thread-5 (]: Using snowflake connection "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"
+[0m15:43:15.991901 [debug] [Thread-6 (]: Using snowflake connection "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"
+[0m15:43:15.992322 [debug] [Thread-7 (]: Using snowflake connection "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"
+[0m15:43:15.992536 [debug] [Thread-3 (]: On test.data_pipeline.fct_orders_discount: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.fct_orders_discount"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select
+    *
+from
+    dbt_db.dbt_schema.fct_orders
+where
+    date(order_date) > CURRENT_DATE()
+    or date(order_date) < date('1990-01-01')
+      
+    ) dbt_internal_test
+[0m15:43:15.992868 [debug] [Thread-8 (]: Using snowflake connection "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"
+[0m15:43:15.993054 [debug] [Thread-2 (]: On test.data_pipeline.fct_orders_date_valid: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.fct_orders_date_valid"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select
+    *
+from
+    dbt_db.dbt_schema.fct_orders
+where
+    item_discount_amount > 0
+      
+    ) dbt_internal_test
+[0m15:43:15.993378 [debug] [Thread-9 (]: Using snowflake connection "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"
+[0m15:43:15.993573 [debug] [Thread-4 (]: On test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_key
+from dbt_db.dbt_schema.fct_orders
+where order_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.993762 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:43:15.993955 [debug] [Thread-5 (]: On test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select order_key as from_field
+    from dbt_db.dbt_schema.fct_orders
+    where order_key is not null
+),
+
+parent as (
+    select order_key as to_field
+    from dbt_db.dbt_schema.stg_tpch_orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.994152 [debug] [Thread-6 (]: On test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select o_orderkey
+from snowflake_sample_data.tpch_sf1.orders
+where o_orderkey is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.994362 [debug] [Thread-7 (]: On test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select l_orderkey as from_field
+    from snowflake_sample_data.tpch_sf1.lineitem
+    where l_orderkey is not null
+),
+
+parent as (
+    select o_orderkey as to_field
+    from snowflake_sample_data.tpch_sf1.orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.994551 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:43:15.994744 [debug] [Thread-8 (]: On test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    o_orderkey as unique_field,
+    count(*) as n_records
+
+from snowflake_sample_data.tpch_sf1.orders
+where o_orderkey is not null
+group by o_orderkey
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.994926 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:43:15.995110 [debug] [Thread-9 (]: On test.data_pipeline.unique_fct_orders_order_key.f5e7a90273: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "data_pipeline", "target_name": "dev", "node_id": "test.data_pipeline.unique_fct_orders_order_key.f5e7a90273"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_key as unique_field,
+    count(*) as n_records
+
+from dbt_db.dbt_schema.fct_orders
+where order_key is not null
+group by order_key
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:43:15.995295 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:43:15.995664 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:43:15.996016 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:43:15.996390 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m15:43:15.996857 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m15:43:15.997620 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m15:43:16.695026 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.708955 [debug] [Thread-8 (]: Timing info for test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2 (execute): 15:43:15.987657 => 15:43:16.708519
+[0m15:43:16.709624 [debug] [Thread-8 (]: On test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2: Close
+[0m15:43:16.749455 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.750544 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.753654 [debug] [Thread-6 (]: Timing info for test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b (execute): 15:43:15.984856 => 15:43:16.753306
+[0m15:43:16.756273 [debug] [Thread-4 (]: Timing info for test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15 (execute): 15:43:15.982706 => 15:43:16.755972
+[0m15:43:16.756866 [debug] [Thread-6 (]: On test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b: Close
+[0m15:43:16.757652 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.758163 [debug] [Thread-4 (]: On test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15: Close
+[0m15:43:16.760924 [debug] [Thread-1 (]: Timing info for test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048 (execute): 15:43:15.937071 => 15:43:16.760679
+[0m15:43:16.762762 [debug] [Thread-1 (]: On test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048: Close
+[0m15:43:16.774524 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.776569 [debug] [Thread-7 (]: Timing info for test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d (execute): 15:43:15.986012 => 15:43:16.776328
+[0m15:43:16.777250 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.777673 [debug] [Thread-7 (]: On test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d: Close
+[0m15:43:16.779267 [debug] [Thread-9 (]: Timing info for test.data_pipeline.unique_fct_orders_order_key.f5e7a90273 (execute): 15:43:15.988685 => 15:43:16.779068
+[0m15:43:16.780854 [debug] [Thread-9 (]: On test.data_pipeline.unique_fct_orders_order_key.f5e7a90273: Close
+[0m15:43:16.782807 [info ] [Thread-8 (]: 8 of 9 PASS source_unique_tpch_orders_o_orderkey ............................... [[32mPASS[0m in 0.89s]
+[0m15:43:16.783664 [debug] [Thread-8 (]: Finished running node test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2
+[0m15:43:16.829294 [info ] [Thread-4 (]: 4 of 9 PASS not_null_fct_orders_order_key ...................................... [[32mPASS[0m in 0.94s]
+[0m15:43:16.830018 [info ] [Thread-1 (]: 1 of 9 PASS accepted_values_fct_orders_status_code__P__O__F .................... [[32mPASS[0m in 0.94s]
+[0m15:43:16.830631 [debug] [Thread-4 (]: Finished running node test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15
+[0m15:43:16.831040 [debug] [Thread-1 (]: Finished running node test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048
+[0m15:43:16.831959 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:16.833370 [debug] [Thread-5 (]: Timing info for test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce (execute): 15:43:15.983761 => 15:43:16.833192
+[0m15:43:16.833690 [debug] [Thread-5 (]: On test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce: Close
+[0m15:43:16.836622 [info ] [Thread-6 (]: 6 of 9 PASS source_not_null_tpch_orders_o_orderkey ............................. [[32mPASS[0m in 0.94s]
+[0m15:43:16.837202 [debug] [Thread-6 (]: Finished running node test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b
+[0m15:43:16.844824 [info ] [Thread-7 (]: 7 of 9 PASS source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_  [[32mPASS[0m in 0.95s]
+[0m15:43:16.845267 [debug] [Thread-7 (]: Finished running node test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d
+[0m15:43:16.846433 [info ] [Thread-9 (]: 9 of 9 PASS unique_fct_orders_order_key ........................................ [[32mPASS[0m in 0.95s]
+[0m15:43:16.846843 [debug] [Thread-9 (]: Finished running node test.data_pipeline.unique_fct_orders_order_key.f5e7a90273
+[0m15:43:16.900024 [info ] [Thread-5 (]: 5 of 9 PASS relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_  [[32mPASS[0m in 1.01s]
+[0m15:43:16.900559 [debug] [Thread-5 (]: Finished running node test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce
+[0m15:43:17.157685 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:43:17.162421 [debug] [Thread-3 (]: Timing info for test.data_pipeline.fct_orders_discount (execute): 15:43:15.981184 => 15:43:17.161919
+[0m15:43:17.163236 [debug] [Thread-3 (]: On test.data_pipeline.fct_orders_discount: Close
+[0m15:43:17.239358 [info ] [Thread-3 (]: 3 of 9 PASS fct_orders_discount ................................................ [[32mPASS[0m in 1.35s]
+[0m15:43:17.240769 [debug] [Thread-3 (]: Finished running node test.data_pipeline.fct_orders_discount
+[0m15:43:17.847975 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m15:43:17.849812 [debug] [Thread-2 (]: Timing info for test.data_pipeline.fct_orders_date_valid (execute): 15:43:15.947306 => 15:43:17.849583
+[0m15:43:17.850209 [debug] [Thread-2 (]: On test.data_pipeline.fct_orders_date_valid: Close
+[0m15:43:17.928172 [info ] [Thread-2 (]: 2 of 9 PASS fct_orders_date_valid .............................................. [[32mPASS[0m in 2.04s]
+[0m15:43:17.929031 [debug] [Thread-2 (]: Finished running node test.data_pipeline.fct_orders_date_valid
+[0m15:43:17.931465 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:43:17.931948 [debug] [MainThread]: Connection 'test.data_pipeline.accepted_values_fct_orders_status_code__P__O__F.2c062f3048' was properly closed.
+[0m15:43:17.932325 [debug] [MainThread]: Connection 'test.data_pipeline.fct_orders_date_valid' was properly closed.
+[0m15:43:17.932670 [debug] [MainThread]: Connection 'test.data_pipeline.fct_orders_discount' was properly closed.
+[0m15:43:17.933008 [debug] [MainThread]: Connection 'test.data_pipeline.not_null_fct_orders_order_key.6a6f83ab15' was properly closed.
+[0m15:43:17.933353 [debug] [MainThread]: Connection 'test.data_pipeline.relationships_fct_orders_order_key__order_key__ref_stg_tpch_orders_.05b89e79ce' was properly closed.
+[0m15:43:17.933684 [debug] [MainThread]: Connection 'test.data_pipeline.source_not_null_tpch_orders_o_orderkey.ebd571817b' was properly closed.
+[0m15:43:17.934016 [debug] [MainThread]: Connection 'test.data_pipeline.source_relationships_tpch_lineitem_l_orderkey__o_orderkey__source_tpch_orders_.f722cb898d' was properly closed.
+[0m15:43:17.934354 [debug] [MainThread]: Connection 'test.data_pipeline.source_unique_tpch_orders_o_orderkey.374f048af2' was properly closed.
+[0m15:43:17.934685 [debug] [MainThread]: Connection 'test.data_pipeline.unique_fct_orders_order_key.f5e7a90273' was properly closed.
+[0m15:43:17.935109 [info ] [MainThread]: 
+[0m15:43:17.935711 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 2.63 seconds (2.63s).
+[0m15:43:17.937296 [debug] [MainThread]: Command end result
+[0m15:43:17.948410 [info ] [MainThread]: 
+[0m15:43:17.948774 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:43:17.949071 [info ] [MainThread]: 
+[0m15:43:17.949373 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m15:43:17.952286 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.800585, "process_user_time": 5.885626, "process_kernel_time": 0.497534, "process_mem_max_rss": "209764352", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:43:17.952714 [debug] [MainThread]: Command `dbt test` succeeded at 15:43:17.952616 after 3.80 seconds
+[0m15:43:17.953014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9be4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3f2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d8c8290>]}
+[0m15:43:17.953322 [debug] [MainThread]: Flushing usage events
